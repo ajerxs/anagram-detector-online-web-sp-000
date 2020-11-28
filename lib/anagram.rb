@@ -6,14 +6,9 @@ class Anagram
     @anagrams = anagrams
   end
 
-  def match(anagrams)
-    nuarray = []
-    anagrams.each do |words|
-      words.split(" ").sort
-      nuarray << words
-    end
-    if nuarray == anagrams
-      return anagrams.match
+  def match(array)
+    array.select do |words|
+      words.split(" ").sort == array.split(" ").sort
     end
   end
 end
