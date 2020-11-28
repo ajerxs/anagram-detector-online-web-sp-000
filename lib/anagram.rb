@@ -13,7 +13,7 @@ class Anagram
       nuarray << words
     end
     if nuarray == anagrams
-      return anagrams
+      return anagrams.match
     end
   end
 end
