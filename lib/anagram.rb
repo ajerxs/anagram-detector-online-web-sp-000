@@ -6,7 +6,7 @@ class Anagram
     @anagrams = anagrams
   end
 
-  def match
+  def match(anagrams)
     nuarray = []
     anagrams.each do |words|
       words.split(" ").sort
