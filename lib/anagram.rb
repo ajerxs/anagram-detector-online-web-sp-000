@@ -12,7 +12,7 @@ class Anagram
       words.split(" ").sort
       nuarray << words
     end
-    if nuarray = anagrams
+    if nuarray == anagrams
       return anagrams
     end
   end
